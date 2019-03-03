@@ -2,7 +2,7 @@
 ccopy_reg
 _reconstructor
 p1
-(ceqtools.CModEFIT
+(ceqtools3.CModEFIT
 CModEFITTree
 p2
 c__builtin__

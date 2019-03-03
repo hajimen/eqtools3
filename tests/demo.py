@@ -1,16 +1,16 @@
-# This script demonstrates some basic functionality of eqtools, giving basic
+# This script demonstrates some basic functionality of eqtools3, giving basic
 # inputs and the expected outputs. For a more detailed demo, refer to the online
 # documentation at eqtools.readthedocs.org. For a more detailed set of tests,
 # run the files test.py and unittests.py in this directory.
 
-import eqtools
+import eqtools3
 
 # Load the sample data (for local C-Mod users the data are taken from the
 # MDSplus tree, for other users the pickled data are used):
 try:
     shot = 1120914027
     # Run tests with both of these to be sure that tspline does everything right:
-    e = eqtools.CModEFITTree(shot)
+    e = eqtools3.CModEFITTree(shot)
 except:
     import warnings
     warnings.warn(

@@ -1,15 +1,15 @@
 import unittest
 import scipy
 
-import eqtools
+import eqtools3
 import warnings
 
 try:
     shot = 1120914027
     # Run tests with both of these to be sure that tspline does everything right:
-    e = eqtools.CModEFITTree(shot)
-    if eqtools.core._has_trispline:
-        et = eqtools.CModEFITTree(shot, tspline=True)
+    e = eqtools3.CModEFITTree(shot)
+    if eqtools3.core._has_trispline:
+        et = eqtools3.CModEFITTree(shot, tspline=True)
     else:
         warnings.warn(
             "Trispline is not compiled and will not be tested.",
@@ -26,7 +26,7 @@ except:
     import cPickle as pkl
     with open('test_data.pkl', 'rb') as f:
         shot, e, et = pkl.load(f)
-        if not eqtools.core._has_trispline:
+        if not eqtools3.core._has_trispline:
             et = e
 
 scalar_R = 0.75

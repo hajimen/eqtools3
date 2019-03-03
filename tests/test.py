@@ -20,7 +20,7 @@
 numerical calculations of flux mapping to analytic forms used in
 Soloviev equilibria with circular cross section.
 """
-import eqtools
+import eqtools3
 import SolovievEFIT as sefit
 import matplotlib as mpl
 import matplotlib.pyplot as plt
