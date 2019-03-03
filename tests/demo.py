@@ -19,7 +19,7 @@ except:
         "consistency for your use case.",
         RuntimeWarning
     )
-    import cPickle as pkl
+    import pickle as pkl
     with open('test_data.pkl', 'rb') as f:
         shot, e, et = pkl.load(f)
 

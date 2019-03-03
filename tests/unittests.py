@@ -23,9 +23,9 @@ except:
         "consistency for your use case.",
         RuntimeWarning
     )
-    import cPickle as pkl
+    import pickle as pkl
     with open('test_data.pkl', 'rb') as f:
-        shot, e, et = pkl.load(f)
+        shot, e, et = pkl.load(f, encoding='latin1')
         if not eqtools3.core._has_trispline:
             et = e
 

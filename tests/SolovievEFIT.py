@@ -26,7 +26,7 @@ Classes:
 
 import scipy
 from collections import namedtuple
-from eqtools.core import Equilibrium, ModuleWarning, inPolygon
+from eqtools3.core import Equilibrium, ModuleWarning, inPolygon
 
 import warnings
 

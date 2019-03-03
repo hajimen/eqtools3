@@ -53,7 +53,7 @@ rGrid,zGrid = scipy.meshgrid(R,Z)
 
 # construct face points as meshgrid
 rFace,zFace = scipy.meshgrid((R[:-1] + R[1:]) / 2.0, (Z[:-1] + Z[1:]) / 2.0)
-print rFace.shape
+print(rFace.shape)
 
 # plot illustration
 fig = plt.figure(figsize=(8,8))
